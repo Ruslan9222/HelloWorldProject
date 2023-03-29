@@ -1,4 +1,4 @@
-package by.ruslanradevich.lessons3;
+package by.ruslan.radevich.lessons3;
 
 public class ForLoopClass {
     public static void main(String[] args) {
