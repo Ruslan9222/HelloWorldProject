@@ -1,6 +1,6 @@
-package by.ruslan.radevich.homework.lessonsThird;
+package by.ruslan.radevich.homework.lessons3;
 
-public class TaskThree {
+public class ThirdTask {
     public static void main(String[] args) {
         int number = 0;
         while (number < 98) {
