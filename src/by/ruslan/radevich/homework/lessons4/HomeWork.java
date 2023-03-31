@@ -1,11 +1,10 @@
 package by.ruslan.radevich.homework.lessons4;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class homework {
+public class HomeWork {
     public static void main(String[] args) {
         sixthTaskLessons3();
 
@@ -30,10 +29,22 @@ public class homework {
         for (int i = 0 ; i< arr.length ; i++){
             arr[i]= random.nextInt(5);
             System.out.println(Arrays.toString(arr));
-            if(arr[i]==number){
-                System.out.println("there is such a number");
+            if(arr[i]==number);
+        }
+        System.out.println("there is such a number " + number );
+
+
+        fifthTaskLessons3();
+    }
+
+    private static void fifthTaskLessons3() {
+        for( int count = 0; count<45; count+=5){
+            if (count%2 ==0){
+                System.out.println(count);
+            }else {
+                System.out.println(-count);
             }
         }
+
     }
 }
-//
