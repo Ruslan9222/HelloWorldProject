@@ -25,12 +25,14 @@ public class HomeWork {
         System.out.println("Enter number");
         int number = input.nextInt();
         int[] arr = new int[5];
-        Random random = new Random(10);
+        Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(5);
-            System.out.println(Arrays.toString(arr));
+            if (arr[i] > 0) {
+                System.out.println("there is such a number ");
+                break;
+            }
         }
-        System.out.println("there is such a number " + number);
 
 
         fifthTaskLessons3();
