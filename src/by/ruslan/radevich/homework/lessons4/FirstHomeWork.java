@@ -39,8 +39,8 @@ public class FirstHomeWork {
 
 
         Scanner input1 = new Scanner(System.in);
-        int minValue = Integer.MIN_VALUE;
-        int maxValue = Integer.MAX_VALUE;
+        int minValue = 0;
+        int maxValue = 0;
         float average = 0;
         System.out.println("Enter the size of the array");
         int n = input1.nextInt();
@@ -48,14 +48,20 @@ public class FirstHomeWork {
         Random random1 = new Random();
         for (int i = 0; i < arr2.length; i++) {
             arr2[i] = random1.nextInt(10);
-            if (arr2[i] > minValue) {
+            if (arr2[i] > maxValue) {
                 minValue = arr2[i];
+                System.out.println("maxValue " + maxValue);
+            }
+            if (arr2[i] < minValue) {
+                maxValue = arr2[i];
                 System.out.println("minValue " + minValue);
             }
-            if (arr2[i] < maxValue) {
-                maxValue = arr2[i];
-                System.out.println("maxValue " + maxValue);
-            }//здесь задача не доделана
+            int sum = 0;
+            for (int val : arr2) {
+                sum += val;
+            }
+                System.out.println("average " + (float)sum/n);
+
 
         }
     }
