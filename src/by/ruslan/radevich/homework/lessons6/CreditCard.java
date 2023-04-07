@@ -1,56 +1,56 @@
 package by.ruslan.radevich.homework.lessons6;
 
 public class CreditCard {
-    private int accountnumber = 12343214;
-    private int accountbalance;
-    private int accrualofmoney;
-    private int withdrawalofmoney;
+    private int accountNumber = 12343214;
+    private int accountBalance;
+    private int accrualOfMoney;
+    private int withdrawalOfMoney;
 
-    public CreditCard(int accountnumber, int accountbalance) {
-        this.accountnumber = accountnumber;
-        this.accountbalance = accountbalance;
+    public CreditCard(int accountNumber, int accountBalance) {
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
     }
 
-    public int getAccountbalance() {
-        return accountbalance;
+    public int getAccountBalance() {
+        return accountBalance;
     }
 
-    public void setAccountbalance(int accountbalance) {
-        this.accountbalance = accountbalance;
+    public void setAccountBalance(int accountBalance) {
+        this.accountBalance = accountBalance;
     }
 
-    public int getAccrualofmoney() {
-        return accrualofmoney;
+    public int getAccrualOfMoney() {
+        return accrualOfMoney;
     }
 
-    public void setAccrualofmoney(int accrualofmoney) {
-        this.accrualofmoney = accrualofmoney;
+    public void setAccrualOfMoney(int accrualofmoney) {
+        this.accrualOfMoney = accrualOfMoney;
     }
 
-    public int getWithdrawalofmoney() {
-        return withdrawalofmoney;
+    public int getWithdrawalOfMoney() {
+        return withdrawalOfMoney;
     }
 
-    public void setWithdrawalofmoney(int withdrawalofmoney) {
-        this.withdrawalofmoney = withdrawalofmoney;
+    public void setWithdrawalOfMoney(int withdrawalOfMoney) {
+        this.withdrawalOfMoney = withdrawalOfMoney;
     }
 
     public void putOfMoney(int accrualofmoney) {
-        accountbalance = accountbalance + accrualofmoney;
-        System.out.println("balance + " + accrualofmoney);
+        accountBalance = accountBalance + accrualOfMoney;
+        System.out.println("balance + " + accrualOfMoney);
     }
 
     public void outOfMoney(int withdrawalofmoney) {
-        accountbalance = accountbalance - withdrawalofmoney;
-        System.out.println("balance - " + withdrawalofmoney);
+        accountBalance = accountBalance - withdrawalOfMoney;
+        System.out.println("balance - " + withdrawalOfMoney);
     }
 
     public void balance() {
-        System.out.println("balance " + accountbalance);
+        System.out.println("balance " + accountBalance);
     }
     public void cardInformation(){
-        System.out.println("account number "+accountnumber);
-        System.out.println("balance "+ accountbalance);
+        System.out.println("account number "+accountNumber);
+        System.out.println("balance "+ accountBalance);
     }
 
 }
