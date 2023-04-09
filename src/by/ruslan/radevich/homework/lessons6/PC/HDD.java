@@ -4,7 +4,7 @@ public class HDD {
     private String name;
     private String type;
     private int volume;
-    public String typeInstall;
+    public String installType;
 
     public HDD(String name, String type, int volume) {
         this.name = name;
@@ -18,7 +18,7 @@ public class HDD {
                 "name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 ", volume=" + volume +
-                ", typeInstall='" + typeInstall + '\'' +
+                ", typeInstall='" + installType + '\'' +
                 '}';
     }
 
@@ -54,7 +54,7 @@ public class HDD {
         System.out.println("volume " + volume);
     }
 
-    public void typeInstall(boolean internal) {
+    public void instalType(boolean internal) {
         if (internal) {
             System.out.println("HDD is internal");
         } else {
