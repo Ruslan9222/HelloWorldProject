@@ -12,6 +12,16 @@ public class HDD {
         this.volume = volume;
     }
 
+    @Override
+    public String toString() {
+        return "HDD{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", volume=" + volume +
+                ", typeInstall='" + typeInstall + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -35,11 +45,13 @@ public class HDD {
     public void setVolume(int volume) {
         this.volume = volume;
     }
-    public void name(String name){
-        System.out.println("name "+name);
+
+    public void name(String name) {
+        System.out.println("name " + name);
     }
-    public void volume(int volume){
-        System.out.println("volume "+ volume );
+
+    public void volume(int volume) {
+        System.out.println("volume " + volume);
     }
 
     public void typeInstall(boolean internal) {

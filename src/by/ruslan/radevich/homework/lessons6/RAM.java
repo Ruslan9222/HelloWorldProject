@@ -4,6 +4,20 @@ public class RAM {
     private String name;
     private int volume;
 
+    public RAM(String name, int volume) {
+        this.name = name;
+        this.volume = volume;
+
+    }
+
+    @Override
+    public String toString() {
+        return "RAM{" +
+                "name='" + name + '\'' +
+                ", volume=" + volume +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -20,11 +34,6 @@ public class RAM {
         this.volume = volume;
     }
 
-    public RAM(String name, int volume) {
-        this.name = name;
-        this.volume = volume;
-
-    }
 
     public void name(String name) {
         System.out.println("name " + name);
