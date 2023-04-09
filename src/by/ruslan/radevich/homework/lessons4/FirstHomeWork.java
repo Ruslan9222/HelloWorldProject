@@ -49,11 +49,11 @@ public class FirstHomeWork {
         for (int i = 0; i < arr2.length; i++) {
             arr2[i] = random1.nextInt(10);
             if (arr2[i] > maxValue) {
-                minValue = arr2[i];
+                maxValue = arr2[i];
                 System.out.println("maxValue " + maxValue);
             }
             if (arr2[i] < minValue) {
-                maxValue = arr2[i];
+                minValue = arr2[i];
                 System.out.println("minValue " + minValue);
             }
             int sum = 0;
