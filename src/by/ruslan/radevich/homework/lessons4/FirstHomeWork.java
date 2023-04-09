@@ -39,8 +39,8 @@ public class FirstHomeWork {
 
 
         Scanner input1 = new Scanner(System.in);
-        int minValue = 0;
-        int maxValue = 0;
+        int minValue = Integer.MAX_VALUE;
+        int maxValue = Integer.MIN_VALUE;
         float average = 0;
         System.out.println("Enter the size of the array");
         int n = input1.nextInt();
