@@ -36,3 +36,4 @@ public abstract class Comp {//нельзя создать в маин класс
                 '}';
     }
 }
+//
