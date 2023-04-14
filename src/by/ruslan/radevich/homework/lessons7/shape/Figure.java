@@ -1,6 +1,6 @@
-package by.ruslan.radevich.homework.lessons7.shapes;
+package by.ruslan.radevich.homework.lessons7.shape;
 
-public class Figure implements Shapes{
+public class Figure implements Shape{
     @Override
     public void area() {
         System.out.println("this is area");

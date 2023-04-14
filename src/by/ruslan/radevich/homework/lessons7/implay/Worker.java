@@ -1,8 +1,11 @@
 package by.ruslan.radevich.homework.lessons7.implay;
 
-public class Worker extends Implay{
+public class Worker implements Organization {
 
-    public Worker(String director, String worker, String accountant) {
-        super(director, worker, accountant);
+
+    @Override
+    public void staffComposition() {
+        System.out.println("I am worker this organization");
+
     }
 }

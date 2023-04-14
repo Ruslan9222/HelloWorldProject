@@ -1,7 +1,10 @@
 package by.ruslan.radevich.homework.lessons7.implay;
 
-public class Accountant extends Implay{
-    public Accountant(String director, String worker, String accountant) {
-        super(director, worker, accountant);
+public class Accountant implements Organization {
+
+    @Override
+    public void staffComposition() {
+        System.out.println("I am accountant this organization");
+
     }
 }

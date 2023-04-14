@@ -1,4 +1,4 @@
-package by.ruslan.radevich.homework.lessons7.shapes;
+package by.ruslan.radevich.homework.lessons7.shape;
 
 public class MainShapes {
     public static void main(String[] args) {
@@ -18,12 +18,15 @@ public class MainShapes {
         figure.area();
         figure.perimeter();
 
-        Shapes[] PerimeterArea = new Shapes[5];
+        Shape[] PerimeterArea = new Shape[5];
         PerimeterArea[0] = new Triangle();
         PerimeterArea[1] = new Circle();
         PerimeterArea[2] = new Figure();
         PerimeterArea[3] = new Rectangle();
         PerimeterArea[4] = new Triangle();
+        for (Shape s: PerimeterArea){
+            s.perimeter();
+        }
 
 
 

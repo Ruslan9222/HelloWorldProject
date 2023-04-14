@@ -1,6 +1,6 @@
-package by.ruslan.radevich.homework.lessons7.shapes;
+package by.ruslan.radevich.homework.lessons7.shape;
 
-public class Circle implements Shapes{
+public class Circle implements Shape{
     @Override
     public void area() {
         System.out.println("Circle area "+"L=2*3,14*r");

@@ -1,11 +1,13 @@
 package by.ruslan.radevich.homework.lessons7.implay;
 
-public class Director extends Implay {
+public class Director implements Organization {
 
 
-    public Director(String director, String worker, String accountant) {
-        super(director, worker, accountant);
+    @Override
+    public void staffComposition() {
+        System.out.println("I am director this organization");
     }
-
 }
+
+
 

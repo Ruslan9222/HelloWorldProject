@@ -1,6 +1,6 @@
-package by.ruslan.radevich.homework.lessons7.shapes;
+package by.ruslan.radevich.homework.lessons7.shape;
 
-public class Triangle implements Shapes{
+public class Triangle implements Shape{
     @Override
     public void area() {
         System.out.println("Triangle area "+"S=(a*h)/2");

@@ -1,6 +1,6 @@
-package by.ruslan.radevich.homework.lessons7.shapes;
+package by.ruslan.radevich.homework.lessons7.shape;
 
-public class Rectangle implements Shapes{
+public class Rectangle implements Shape{
     @Override
     public void area() {
         System.out.println("Rectangle area "+"S=a*b");
