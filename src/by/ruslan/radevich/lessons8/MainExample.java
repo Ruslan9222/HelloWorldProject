@@ -24,8 +24,8 @@ public class MainExample {
         }
     }
     public static int fib(int param){
-        if (param==1||param==2) return 1;
-        return fib(-1)+fib(-2);
+        if (param==0||param==1) return 1;
+        return fib(param-1)+fib(param-2);
     }
 
 }
