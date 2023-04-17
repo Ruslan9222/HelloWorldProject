@@ -5,6 +5,7 @@ public class Phone {
     private String model = "Samsung";
     private int weight = 250;
     private int receveNumber;
+    private String sendMessage;
 
     private String ReceiveCall = "name";
 
@@ -20,6 +21,14 @@ public class Phone {
     }
 
     public Phone() {
+    }
+
+    public String getSendMessage() {
+        return sendMessage;
+    }
+
+    public void setSendMessage(String sendMessage) {
+        this.sendMessage = sendMessage;
     }
 
     public int getReceveNumber() {
@@ -49,5 +58,8 @@ public class Phone {
 
     public void name(String name,int receveCall) {
         System.out.println("Call " + name + " " + getReceveCall());
+    }
+    public void message(int receveNumber,String sendMessage){
+        System.out.println(sendMessage.length()+receveNumber);
     }
 }

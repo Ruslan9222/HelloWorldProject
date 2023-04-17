@@ -10,7 +10,7 @@ public class Main {
         System.out.println(phone1);
         System.out.println(phone2);
         phone.getReceveCall();
-        phone.name("Ruslan",2223333);
+        phone.name("Ruslan", 2223333);
         phone1.name("Ruslan");
         phone2.name("Ruslan");
 
