@@ -56,14 +56,14 @@ public class Phone {
                 '}';
     }
 
-    public void name(String name, int receveCall) {
+    public void printName(String name, int receveCall) {
         System.out.println("Call " + name + " " +receveCall);
     }
-    public void name(int receveCall, String name) {
+    public void printName(int receveCall, String name) {
         System.out.println("Call " + name + " " +receveCall);
     }
 
-    public void message(int receveNumber, String sendMessage) {
+    public void sendMessage(int receveNumber, String sendMessage) {
         System.out.println(sendMessage.length() + receveNumber);
     }
 }
