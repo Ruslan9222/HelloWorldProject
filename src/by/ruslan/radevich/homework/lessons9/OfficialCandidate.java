@@ -26,7 +26,7 @@ public class OfficialCandidate extends Voter {
 
     public void candidate1() {
         Random candidate1 = new Random(Voter);
-        for (Voter = 0, Voter < 100, Voter ++) {
+        for (Voter = 0; Voter < 100; Voter ++) {
             System.out.println("OfficialCandidate " + candidate1);
         }
 
