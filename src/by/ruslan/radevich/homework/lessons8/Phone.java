@@ -1,9 +1,9 @@
 package by.ruslan.radevich.homework.lessons8;
 
 public class Phone {
-    private int number = 3333333;
-    private String model = "Samsung";
-    private int weight = 250;
+    private int number;
+    private String model;
+    private int weight;
     private int receveNumber;
     private String sendMessage;
 
@@ -56,10 +56,14 @@ public class Phone {
                 '}';
     }
 
-    public void name(String name,int receveCall) {
-        System.out.println("Call " + name + " " + getReceveCall());
+    public void name(String name, int receveCall) {
+        System.out.println("Call " + name + " " +receveCall);
     }
-    public void message(int receveNumber,String sendMessage){
-        System.out.println(sendMessage.length()+receveNumber);
+    public void name(int receveCall, String name) {
+        System.out.println("Call " + name + " " +receveCall);
+    }
+
+    public void message(int receveNumber, String sendMessage) {
+        System.out.println(sendMessage.length() + receveNumber);
     }
 }

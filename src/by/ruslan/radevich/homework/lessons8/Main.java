@@ -2,17 +2,17 @@ package by.ruslan.radevich.homework.lessons8;
 
 public class Main {
     public static void main(String[] args) {
-        Phone1 phone1 = new Phone1();
-        Phone2 phone2 = new Phone2();
-        Phone phone = new Phone();
+        Phone phone = new Phone(5555555,"Samsung",250);
+        Phone phone1 = new Phone(4444444,"MI",240);
+        Phone phone2 = new Phone(3333333,"Iphone",245);
 
+        phone.message(5556666,"dad");
         System.out.println(phone);
         System.out.println(phone1);
         System.out.println(phone2);
-        phone.getReceveCall();
         phone.name("Ruslan", 2223333);
-        phone1.name("Ruslan");
-        phone2.name("Ruslan");
+        phone1.name("Vasya",1233332);
+        phone2.name("Max",1222222);
 
     }
 }
