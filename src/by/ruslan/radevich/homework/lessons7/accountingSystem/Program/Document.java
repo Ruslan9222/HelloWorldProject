@@ -30,4 +30,12 @@ public abstract class Document {
    public void setDocumentDate(Date documentDate) {
       this.documentDate = documentDate;
    }
+
+   @Override
+   public String toString() {
+      return "Document{" +
+              "documentNumber=" + documentNumber +
+              ", documentDate=" + documentDate +
+              '}';
+   }
 }
