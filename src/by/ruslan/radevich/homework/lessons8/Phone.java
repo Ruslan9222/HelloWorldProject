@@ -1,6 +1,10 @@
 package by.ruslan.radevich.homework.lessons8;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Phone {
+    public int[] getReceveNumber;
     private int number;
     private String model;
     private int weight;
@@ -64,6 +68,9 @@ public class Phone {
     }
 
     public void sendMessage(int receveNumber, String sendMessage) {
-        System.out.println(sendMessage.length() + receveNumber);
+        System.out.println(sendMessage + " "+ receveNumber);
     }
-}
+    public void sendMessage(int[] receveNumber) {
+        System.out.println("Message "+ Arrays.toString(receveNumber));
+        }
+    }

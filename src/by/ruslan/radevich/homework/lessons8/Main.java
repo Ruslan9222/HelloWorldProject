@@ -5,8 +5,8 @@ public class Main {
         Phone phone = new Phone(5555555,"Samsung",250);
         Phone phone1 = new Phone(4444444,"MI",240);
         Phone phone2 = new Phone(3333333,"Iphone",245);
-
         phone.sendMessage(5556666,"dad");
+        phone.sendMessage(phone.getReceveNumber);
         System.out.println(phone);
         System.out.println(phone1);
         System.out.println(phone2);
