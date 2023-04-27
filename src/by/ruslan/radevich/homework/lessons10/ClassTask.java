@@ -36,12 +36,17 @@ public class ClassTask {
 
     }
 
-    public static void fifthTask() {
+    public static void fifthTask() throws MyException {
         String str1 = "ABC";
         String str2 = "abc";
         str1.equalsIgnoreCase(str2);
-        System.out.println(condition.indexOf(str1));
+        try {
+            System.out.println(condition.contains(str1));
+        }catch (MyException e) {
+        }
+        throw new MyException("no",condition);
     }
+
 
     public static void sixthTask() {
         System.out.println(condition.startsWith("555"));
