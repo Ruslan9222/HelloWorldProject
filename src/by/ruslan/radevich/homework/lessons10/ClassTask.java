@@ -8,16 +8,13 @@ public class ClassTask {
     }
 
     public static void secondTask() {
-
-        System.out.println(condition.replace("qwe", "***")
-                .replace("ewq", "***")
-                .replace("w", "*")
-                .replace("q", "*"));
+        StringBuilder builder = new StringBuilder("1234-qwe-4321-ewq-1q2w");
+        System.out.println(builder.replace(5 ,8, "***")
+                .replace(14,17, "***"));
     }
 
     public static void thirdTask() {
-        StringBuilder builder = new StringBuilder("1234-qWe-4321-ewQ-1q2w");
-        builder = new StringBuilder(builder.toString().toLowerCase());
+        StringBuilder builder = new StringBuilder("1234-qWe-4321-ewQ-1q2w".toLowerCase());
         System.out.println(builder
                 .delete(0, 5)
                 .delete(3, 8)
@@ -26,8 +23,7 @@ public class ClassTask {
     }
 
     public static void fourthTask() {
-        StringBuilder builder = new StringBuilder("1234-qWe-4321-ewQ-1q2w");
-        builder = new StringBuilder(builder.toString().toUpperCase());
+        StringBuilder builder = new StringBuilder("1234-qWe-4321-ewQ-1q2w".toUpperCase());
         System.out.println("Leets: " + builder
                 .delete(0, 5)
                 .delete(3, 8)
@@ -38,13 +34,7 @@ public class ClassTask {
 
     public static void fifthTask() throws MyException {
         String str1 = "ABC";
-        String str2 = "abc";
-        str1.equalsIgnoreCase(str2);
-        try {
-            System.out.println(condition.contains(str1));
-        }catch (MyException e) {
-        }
-        throw new MyException("no",condition);
+        System.out.println(condition.toUpperCase().contains(str1));
     }
 
 
@@ -52,7 +42,8 @@ public class ClassTask {
         System.out.println(condition.startsWith("555"));
 
     }
-    public static void seventyTask(){
+
+    public static void seventyTask() {
         System.out.println(condition.endsWith("1a2b"));
     }
 }
