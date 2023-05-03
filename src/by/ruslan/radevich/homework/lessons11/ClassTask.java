@@ -18,7 +18,7 @@ public class ClassTask {
             boolean check2 = condition.startsWith("555");
             System.out.println(check2);
         } catch (Exception e) {
-            System.out.println("He document does not start with the sequence 555"+e);
+            System.out.println("He document does not start with the sequence 555");
         }
 
     }
@@ -27,8 +27,11 @@ public class ClassTask {
         try {
             boolean check3 = condition.endsWith("1a2b");
             System.out.println(check3);
+            if (check3) {
+                System.out.println("here");
+            } else throw new ExceptionClass("123", "1");
         } catch (Exception e) {
-            System.out.println("The document does not end with the sequence 555"+e);
+            System.out.println("The document does not end with the sequence 1a2b");
         }
 
     }
