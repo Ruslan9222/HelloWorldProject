@@ -20,7 +20,7 @@ public class MyBestLoginPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     checkCredentials(loginField1.getText(), passwordField.getText(), confirmPassword.getText());
-                    JOptionPane.showMessageDialog(MyBestLoginPage.this, "login and password are correct");
+                    JOptionPane.showMessageDialog(MyBestLoginPage.this, "Create new account is successful");
                 } catch (WrongLoginException ex) {
                     JOptionPane.showMessageDialog(MyBestLoginPage.this, ex.getMessage(), "Oops, something bad with login: ", JOptionPane.ERROR_MESSAGE);
                     ex.printStackTrace();
