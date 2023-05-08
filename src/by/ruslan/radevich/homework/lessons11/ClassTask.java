@@ -3,37 +3,31 @@ package by.ruslan.radevich.homework.lessons11;
 public class ClassTask {
     public static String condition = "1234-qwe-4321-ewq-1q2w";
 
-    public static void firstTask() {
+    public static void firstTask() throws ExceptionClass {
         String str1 = "ABC";
-//        try {
-//           condition.toUpperCase().contains(str1);
-//        } catch (ExceptionClass e) {
-//            System.out.println("ABC is not found"+e);
-        }
+        boolean check1 = condition.toUpperCase().contains(str1);
+        if (check1) {
+            System.out.println("here");
+        } else throw new ExceptionClass("1", "11");
+    }
 
 
+    public static void secondTask() throws ExceptionClass {
+        boolean check2 = condition.startsWith("555");
+        if (check2) {
+            System.out.println("Here");
+        } else throw new ExceptionClass("2", "2");
 
-    public static void secondTask() {
-        try {
-            boolean check2 = condition.startsWith("555");
-            System.out.println(check2);
-        } catch (Exception e) {
-            System.out.println("He document does not start with the sequence 555");
-        }
 
     }
 
-    public static void thirdTask() {
-        try {
-            boolean check3 = condition.endsWith("1a2b");
-            System.out.println(check3);
-            if (check3) {
-                System.out.println("here");
-            } else throw new ExceptionClass("123", "1");
-        } catch (Exception e) {
-            System.out.println("The document does not end with the sequence 1a2b");
-        }
 
+    public static void thirdTask() throws ExceptionClass {
+        boolean check3 = condition.endsWith("1a2b");
+        System.out.println(check3);
+        if (check3) {
+            System.out.println("here");
+        } else throw new ExceptionClass("123", "1");
     }
 }
 
