@@ -8,7 +8,7 @@ public class ClassTask {
         boolean check1 = condition.toUpperCase().contains(str1);
         if (check1) {
             System.out.println("here");
-        } else throw new ExceptionClass("1", "11");
+        } else throw new ExceptionClass("ABC is not found");
     }
 
 
@@ -16,7 +16,7 @@ public class ClassTask {
         boolean check2 = condition.startsWith("555");
         if (check2) {
             System.out.println("Here");
-        } else throw new ExceptionClass("2", "2");
+        } else throw new ExceptionClass("He document does not start with the sequence 555");
 
 
     }
@@ -27,7 +27,7 @@ public class ClassTask {
         System.out.println(check3);
         if (check3) {
             System.out.println("here");
-        } else throw new ExceptionClass("123", "1");
+        } else throw new ExceptionClass("The document does not end with the sequence 1a2b");
     }
 }
 

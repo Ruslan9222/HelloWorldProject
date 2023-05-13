@@ -5,18 +5,18 @@ public class MainClass {
         try {
             ClassTask.firstTask();
         }catch (ExceptionClass e){
-            System.out.println("ABC is not found");
+            System.out.println(e.getMessage());
         }
         try {
             ClassTask.secondTask();
         } catch (ExceptionClass e){
-            System.out.println("He document does not start with the sequence 555");;
+            System.out.println(e.getMessage());;
         }
 
         try {
             ClassTask.thirdTask();
         } catch (ExceptionClass e) {
-            System.out.println("The document does not end with the sequence 1a2b");
+            System.out.println(e.getMessage());
         }
     }
 }
