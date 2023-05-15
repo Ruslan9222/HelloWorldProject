@@ -10,7 +10,10 @@ public class HomeWork {
                 "and output them in alphabetical order";
         String[] arrayString = text1.split(" ");
         List<String> arrayString2 = new ArrayList<>();
-        arrayString2.add(Arrays.toString(arrayString));
+        Collections.addAll(arrayString2,arrayString);
+        for (String word: arrayString){
+            arrayString2.add(word);
+        }
         Collections.sort(arrayString2);
         System.out.println(Arrays.toString(arrayString));
 
