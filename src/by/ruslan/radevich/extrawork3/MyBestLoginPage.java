@@ -11,23 +11,24 @@ public class MyBestLoginPage extends JFrame {
     private JPanel panel;
     private JTextField loginField1;
     private JPasswordField passwordField;
-    private JButton button1;
+    private JPasswordField confirmPassword;
+    private JButton CreateNewAccount;
 
     public MyBestLoginPage() {
-        button1.addActionListener(new ActionListener() {
+        CreateNewAccount.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    checkCredentials(loginField1.getText(), passwordField.getText());
-                    JOptionPane.showMessageDialog(MyBestLoginPage.this,"login and password are correct");
+                    checkCredentials(loginField1.getText(), passwordField.getText(), confirmPassword.getText());
+                    JOptionPane.showMessageDialog(MyBestLoginPage.this, "Create new account is successful");
                 } catch (WrongLoginException ex) {
-                    JOptionPane.showMessageDialog(MyBestLoginPage.this,ex.getMessage(),"Oops, something bad with login: ", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(MyBestLoginPage.this, ex.getMessage(), "Oops, something bad with login: ", JOptionPane.ERROR_MESSAGE);
                     ex.printStackTrace();
-                }catch (WrongPasswordException ex) {
-                    JOptionPane.showMessageDialog(MyBestLoginPage.this,ex.getMessage(),"Oops, something bad with password: ", JOptionPane.QUESTION_MESSAGE);
+                } catch (WrongPasswordException ex) {
+                    JOptionPane.showMessageDialog(MyBestLoginPage.this, ex.getMessage(), "Oops, something bad with password: ", JOptionPane.QUESTION_MESSAGE);
                     ex.printStackTrace();
-                }catch (Exception ex) {
-                    JOptionPane.showMessageDialog(MyBestLoginPage.this,ex.getMessage(),"Access denied! ", JOptionPane.ERROR_MESSAGE);
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(MyBestLoginPage.this, ex.getMessage(), "Access denied! ", JOptionPane.ERROR_MESSAGE);
                     ex.printStackTrace();
                 }
 
@@ -41,16 +42,24 @@ public class MyBestLoginPage extends JFrame {
         form.setContentPane(form.panel);
         form.setSize(275, 200);
         form.setResizable(false);
-        form.setLocation(500,300);
+        form.setLocation(500, 300);
         form.setDefaultCloseOperation(EXIT_ON_CLOSE);
         form.setVisible(true);
     }
-    private static boolean checkCredentials(String login, String password) throws Exception {
+
+    private static boolean checkCredentials(String login, String password, String confirmPassword) throws Exception {
         String correctLogin = "super";
         String correctPassword = "puper";
-        if(login.length()<3) throw new WrongLoginException("Login is too short");
-        if(password.length()<3) throw new WrongPasswordException("Password is to short");
-        if(login.equals(correctLogin)&&password.equals(correctPassword)) return true;
-        throw new Exception("Login or password are incorrect");
+        if (!password.equals(confirmPassword)) throw new WrongLoginException("Password is incorrect");
+        if (login.length() < 3) throw new WrongLoginException("Login is too short");
+        if (login.length() > 20) throw new WrongLoginException("Login is too Long");
+        if (login.contains(" ")) throw new WrongLoginException("Login is incorrect");
+        if (password.length() < 3) throw new WrongPasswordException("Password is to short");
+        if (password.matches(".*\\d.*")) throw new WrongPasswordException("Login or password is incorrect");
+        // это я загуглил, подскажи как по другому не используя регулярные выражения это написать
+        if (password.contains(" ")) throw new WrongPasswordException("Login or password is incorrect");
+        if (password.length() > 20) throw new WrongPasswordException("Password is to Long");
+        if (login.equals(correctLogin) && password.equals(correctPassword)) return true;
+        throw new Exception("Create new account is successful");
     }
 }
