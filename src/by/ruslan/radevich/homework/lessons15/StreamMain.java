@@ -29,7 +29,7 @@ public class StreamMain {
                 .limit(4)
                 .toList();
         System.out.println(result4);
-
+        System.out.println(test4.stream().count());
         System.out.println(IntStream.of(10,50,5,4,6,6,4,8,10,33).summaryStatistics());
     }
 }
