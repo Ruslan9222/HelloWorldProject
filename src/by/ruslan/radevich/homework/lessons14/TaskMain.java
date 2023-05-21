@@ -3,6 +3,7 @@ package by.ruslan.radevich.homework.lessons14;
 import by.ruslan.radevich.lessons14.Fruit;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
@@ -14,17 +15,16 @@ public class TaskMain {
     }
     public static void fourthTask(){
         LocalDate date = LocalDate.now();
-        Supplier<Integer> daysForWeeks = ()-> date.getDayOfWeek();
+       // Supplier<Integer> daysForWeeks = ()-> date.getDayOfWeek();
     }
     public static void fifthTask(){
         Consumer<Integer> number1 = number -> {
-            if (number*number>=0){
-                System.out.println(number);
+            if (number>=0){
+                System.out.println(number*number);
             }else {
                 System.out.println("The number is negative");
             }
         };
-        System.out.println();
     }
 
 
