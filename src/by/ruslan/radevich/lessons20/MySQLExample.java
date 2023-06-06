@@ -16,7 +16,7 @@ public class MySQLExample {
                     ps.setInt(1,1);
                     ResultSet rs = ps.executeQuery();//так надо по правильному
             connection.commit();// это мы принимаем изменения в БД
-            connection.rollback();//откатываем
+            connection.rollback();//откатываем/
             while (rs.next()){
                 System.out.println(rs.getInt("ID")+ " " + rs.getString("NAME")+" "
                         + rs.getInt("AGE"));
