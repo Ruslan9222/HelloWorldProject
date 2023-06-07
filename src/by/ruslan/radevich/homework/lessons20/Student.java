@@ -1,12 +1,22 @@
 package by.ruslan.radevich.homework.lessons20;
 
-public class Students {
+public class Student {
     private String name;
     private int age;
+    private int id;
 
-    public Students(String name, int age) {
+    public Student(String name, int age, int id) {
         this.name = name;
         this.age = age;
+        this.id = this.id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -27,9 +37,10 @@ public class Students {
 
     @Override
     public String toString() {
-        return "Students{" +
+        return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", id=" + id +
                 '}';
     }
 }

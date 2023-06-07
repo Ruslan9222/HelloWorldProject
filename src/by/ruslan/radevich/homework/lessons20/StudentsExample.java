@@ -10,13 +10,13 @@ public class StudentsExample {
         try
             (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/home_work", "root", "root")) {
             PreparedStatement ps = connection.prepareStatement("select * from STUDENTS where ID =?");
-            List<Student>students = new ArrayList<>();
+            List<Student>student = new ArrayList<>();
             ps.setInt(1,1);
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
                 Student st = new Student(rs.getString("name"), rs.getInt("age"),rs.getInt("id"));
-                students.add(st);
-                System.out.println(students);
+                student.add(st);
+                System.out.println(student);
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
