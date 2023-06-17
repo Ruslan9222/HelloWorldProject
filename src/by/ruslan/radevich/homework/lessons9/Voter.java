@@ -1,22 +1,13 @@
 package by.ruslan.radevich.homework.lessons9;
 
-import java.util.Arrays;
-
 public class Voter {
-
-    static Voter vote;
-
-    static {
-        Object[] vote = new Object[100];
-        Arrays.fill(vote, new Object() {
-            private int count = 0;
-
-            @Override
-            public String toString() {
-                return Integer.toString(++count);
-            }
-        });
-        System.out.println(Arrays.toString(vote));
+    public void vote(int number, OfficialCandidate official, IllegalCandidate illegal, RandomCandidate random) {
+        if (number % 3 == 0) {
+            official.addVote();
+        } else if (number % 3 == 1) {
+            illegal.addVote();
+        } else {
+            random.addVote();
+        }
     }
-
 }

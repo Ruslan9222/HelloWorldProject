@@ -1,34 +1,17 @@
 package by.ruslan.radevich.homework.lessons9;
 
-import java.util.Random;
+public class OfficialCandidate {
+    private int votes;
 
-public class OfficialCandidate extends Voter {
-    private int Voter;
-
-    public OfficialCandidate() {
-
+    public void addVote() {
+        votes++;
     }
 
-    public void setVoter(int voter) {
-        Voter = voter;
+    public int getVotes() {
+        return votes;
     }
 
-    public int getVoter() {
-        return Voter;
-    }
-
-    @Override
-    public String toString() {
-        return "OfficialCandidate{" +
-                "Voter=" + Voter +
-                "} " + super.toString();
-    }
-
-    public void candidate1() {
-        Random candidate1 = new Random(Voter);
-        for (Voter = 0; Voter < 100; Voter ++) {
-            System.out.println("OfficialCandidate " + candidate1);
-        }
-
+    public void setVotes(int votes) {
+        this.votes = votes;
     }
 }
