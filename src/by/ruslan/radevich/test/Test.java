@@ -1,12 +1,12 @@
-package by.ruslan.radevich.test;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import javax.xml.bind.JAXBContext;
-
-public class Test {
-    public static void main(String[] args) {
-        ObjectMapper obm;
-        JAXBContext cont;
-    }
-}
+//package by.ruslan.radevich.test;
+//
+//import com.fasterxml.jackson.databind.ObjectMapper;
+//
+//import javax.xml.bind.JAXBContext;
+//
+//public class Test {
+//    public static void main(String[] args) {
+//        ObjectMapper obm;
+//        JAXBContext cont;
+//    }
+//}
