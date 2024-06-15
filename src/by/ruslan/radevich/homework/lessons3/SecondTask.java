@@ -24,11 +24,11 @@ public class SecondTask {
             for (int i = 0; i < number; i++) {
                 sum = sum + i;
             }
-            System.out.println(sum);
-            System.out.println(b.equals(c));
-            System.out.println(b==c);
-            System.out.println(c1==c);
-            System.out.println(c1.equals(c));
+//            System.out.println(sum);
+//            System.out.println(b.equals(c));
+//            System.out.println(b==c);
+//            System.out.println(c1==c);
+//            System.out.println(c1.equals(c));
 
         }
 
